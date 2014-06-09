@@ -43,6 +43,7 @@ echo "6. Copying keys and certs to server folder"
 cp server.key ../server/Server.key
 cp server.crt ../server/Server.crt
 cp cacert.crt ../server/CA.crt
+cp identity.crt ../server/identity.crt
 cp identity.p12 ../server/Identity.p12
 
 echo "7. Generating keys and certs for plist generation"
