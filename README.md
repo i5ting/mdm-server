@@ -45,7 +45,16 @@ Run **vendor-signing.sh** under the scripts directory. You should now have **pli
 ![Apple Portal](images/certPortal.png)
 
 
-Notice the (i) icon besides renew.  If you click it there will be a long string of text ending in **UID=com.apple.mgmt...**, make sure to copy that string starting at **com** since you will need it later.  Finally download the certificate, save as **PushCert.pem** in the **server** directory.
+Notice the (i) icon besides renew.  If you click it there will be a long string of text ending in **UID=com.apple.mgmt...**, make sure to copy that string starting at **com** since you will need it later.  Finally download the certificate,save as **push_production_identity.pem** in the **scripts/push** directory.
+
+# Encode PushCert.pem
+
+rename pushcert.download file to push_production_identity.pem
+then copy vendor.p12 to scripts/push directory.
+
+Run **make_push.sh** under the scripts/push directory.
+
+<!-- move **PushCert.pem** file to the **server** directory. -->
 
 # Enrollment profile
 
