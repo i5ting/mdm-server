@@ -51,6 +51,9 @@ openssl req -inform pem -outform der -in identity.csr -out customer.der
 cp Identity.p12 vendor.p12
 cp identity.csr customer.csr
 
+# for push
+cp vendor.p12 push/vendor.p12
+
 echo "8. Getting Apple certificates online"
 
 curl https://developer.apple.com/certificationauthority/AppleWWDRCA.cer -o AppleWWDRCA.cer
